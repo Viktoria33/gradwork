@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Banny BoldRound', sans-serif;
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.center{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto; 
+    text-align: center;    
+}
+.cont1{    
+    height: 100vh;
+    background-image: url(./images/header_bg.png);        
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 1000px;
+    min-height: 568px;    
+}
+.header{
+    display: flex;    
+    justify-content: space-between;    
+}
+.logo{    
+    display: inline-block;
+    position: absolute;
+    text-align: center;    
+    height: 150px;
+    width: 150px;
+    margin-top: 25px; 
+    left: calc(50% - 75px);   
+}
+.nav-left ul li, .nav-right ul li{
+    padding: 0 4%;
+    cursor: pointer;
+}
+.nav-left-item, .nav-right-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;            
+}
+.nav-right-item li a, .nav-left-item li a{ 
+    font-size: 12px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    line-height: 18px;
+    padding: 20px 30px;
+    width: 11.5%;
+}
+.nav-left ul li:hover a, .nav-right ul li:hover a{
+    color: #fce38a;    
+    transition: 0.3s;
+}
+.wrapper_content{
+    display: flex;           
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;         
+}
+.content{    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.content h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    letter-spacing: 0.5em;
+    margin-top: 20%;   
+}
+.content h1{
+    font-family: 'Banny BoldRound', sans-serif;
+    font-size: 96px;
+    line-height: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;  
+    margin-top: 68px;  
+}
+.vert_text{       
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: left;
+    color: #FFFFFF;    
+    transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    width: 4.5%;   
+}
+.content hr, .cont2 hr, .cont4 hr, .cont6 hr{
+    width: 60px;
+    border: none;
+    border-radius: 50px;
+    background-color: #E8C300;    
+    height: 5px;
+    margin-top: 80px;
+}
+.button_cont1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+}
+.button_cont1 a{
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;        
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;        
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+.button_cont1 .button1{
+    margin-right: 40px;
+    padding: 15px 60px;
+}
+.button_cont1 .button2{
+    margin-left: 40px;    
+    padding: 15px 70px;
+}
+.button_cont1 a:hover{
+    background: #E8C300;
+    border: 1px solid #E8C300;    
+    transition: 1s ease-in-out;
+}
+.down{
+    width: 15%;
+}
+.down img{ 
+    display: block;       
+    height: 50px;
+    width: 50px;
+    margin: 85px auto;    
+}
+.social{
+    padding-top: 14%;
+}  
+.social-icons li {    
+    list-style-type:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    }
+.social-icons li a {
+    border-bottom: none;
+    }
+.social-icons li img{
+    width:60px;
+    height:60px;
+    margin-top: 20px;
+  }
+.cont2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+.cont2 h4, .cont3 h4, .cont4 h4, .cont5 h4, .cont6 h4{
+    font-family: 'Banny BoldRound';
+    font-size: 36px;
+    line-height: 48px;
+    /* or 133% */
+
+    text-align: center;
+    text-transform: uppercase;
+}
+.cont2 .bold, .cont3 .bold, .cont5 .bold, .cont6 .bold{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cont2 p, .cont3 p, .cont5 p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    text-align: center;
+}
+.cont2 .item, .cont3 .item, .cont4 .item,
+.cont5 .item_spec{
+    width: 48%;
+}
+.cont2 .about, .cont3 .team, .cont4 .book, .cont5 .spec_img{
+    max-width: 100%;
+    height: auto;    
+}
+.cont2:first-child, .cont3:first-child, .cont4:first-child
+, .cont5:first-child{
+    margin-right: 80px;    
+}
+.cont2 hr, .cont3 hr, .cont4 hr, .cont5 hr, .cont6 hr{
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+.cont3{
+    background-image: url(./images/team-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cont3 .team{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+.cont3 h4, .cont3 p, .cont3 .bold, .cont5 h4, .cont5 p, .cont5 .bold{
+    color: #FFFFFF;
+}
+.cont3 h5, .cont5 h5{
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 45px;
+}
+.cont4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+.cont4 span{    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    /* or 100% */
+
+    color: rgba(51, 51, 51, 0.5); 
+    margin-bottom: 45px; 
+    margin-top: 10px;  
+}
+.cont4 .form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cont4 .form_input, .cont4 .form_input select{
+    width: 49%;
+    border-radius: 5px;      
+    margin-bottom: 10px;    
+    padding: 0; 
+}
+.cont4 .form_input:nth-child(1),
+.cont4 .form_input:nth-child(3),
+.cont4 .form_input:nth-child(5){
+    margin-right: 10px;
+}
+.cont4 .form_input input, .cont4 .form_input select{
+    width: 100%;
+    border: none;
+    background: #E5E5E5;
+    padding: 24px 10px;
+    margin: 0;   
+    border-radius: 5px; 
+}
+.cont4 .form_input input::placeholder, .cont4 .form_input select{
+    color: rgba(51, 51, 51, 0.5);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-indent: 20px;
+}
+.cont4 .form_button{
+    width: 100%;
+    border-radius: 5px;
+}
+.cont4 .form_button button{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #E5E5E5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cont4 .form_button:hover button{
+    background: #fce38a;    
+    transition: 2s;
+}
+.cont5{
+    background-image: url(./images/specialties-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+}
+.cont5 .spec{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+.cont6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 140px;    
+}
+.cont6 .item6{
+    width: 100%;
+}
+.cont6 .bold{
+    width: 50%;
+    margin: 0 auto 30px;
+}
+.cont6 .form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cont6 .form_input{
+    width: 32.7%;
+    border-radius: 5px;      
+    margin-bottom: 10px;    
+    padding: 0; 
+}
+.cont6 .form_input_message{
+    width: 100%;
+    border-radius: 5px;      
+    margin-bottom: 10px;    
+    padding: 0;
+}
+
+.cont6 .last_item{
+    display: flex;            
+    flex-wrap: wrap;
+}
+.cont6 span{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;    
+    font-size: 13px;
+    line-height: 12px;
+    /* or 100% */
+
+    color: rgba(51, 51, 51, 0.5);
+    border-radius: 5px;    
+}
+.cont6 .form_input input{
+    width: 100%;
+    border: none;
+    background: #E5E5E5;
+    padding: 24px 10px;
+    margin: 0;   
+    border-radius: 5px; 
+}
+.cont6 .form_input_message input{
+    padding: 24px 10px 70px;
+}
+.cont6 .form_input input::placeholder{
+    color: rgba(51, 51, 51, 0.5);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-indent: 20px;
+}
+.cont6 .form_input:nth-child(1),
+.cont6 .form_input:nth-child(2){
+    margin-right: 10px;
+}
+.cont6 .subitem{
+    width: 49.58%;
+    border-radius: 5px;
+}
+.cont6 .subitem button{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #E5E5E5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cont6 .subitem:hover button{
+    background: #fce38a;    
+    transition: 2s;
+}
+.cont6 .text{        
+    align-self: center;
+    margin-right: 10px;
+}
+.cont6 span i{
+    color: #fce38a;
+}
+.cont7{    
+    margin-top: 100px;
+}
+.footer{
+    background-color: black;
+    padding: 45px 0;
+    margin-top: -0.2%;
+}
+.footer .foot{    
+    font-family: 'Open Sans';
+    text-align: center;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    /* or 100% */
+    
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    
+}
+@font-face{
+    font-family: 'Banny BoldRound';
+    font-weight: bold;
+    font-style: normal;
+    src: local("Banny BoldRound"), url(./Fonts/Banny-BoldRound.woff);    
+  }
